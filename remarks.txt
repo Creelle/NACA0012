@@ -1,0 +1,12 @@
+
+Pour comparer le cas sans volets et avec volets, il faut prendre en compte l 'augumentation de la surface de cette derniere
+Des lors, il faut multiplier ou diviser l 'une des deux courbes par le rapport S ini/ S fin
+
+--> aussi prendre en compte l 'allongement qui n est pas de 6
+
+l_ref = 0.159
+S_ini = 0.0508
+S_final = 6.4*10-3 + 0.0508 (ini+volets )
+
+S_ref = 0.03424
+l_ref_6= 0.107
