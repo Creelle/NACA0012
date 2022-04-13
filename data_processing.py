@@ -11,7 +11,7 @@ In : "file_path" : local file path example "C:/Users/robbe/Documents/NACA0012/11
 Out: rst : all the results
      incidence,cla,cxa,cma,speed :  the arrays that are of the most interest
 """
-
+#coucou robbe
 def file_reading(file_path,file_name):
     file_string = file_path+file_name
     with open(file_string,'r') as f:
