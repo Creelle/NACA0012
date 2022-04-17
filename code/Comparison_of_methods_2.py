@@ -16,7 +16,9 @@ rst,incidence,cla,cxa,cma,speed,za,xa,ma  = file_reading(document_path,file_name
 """
 Plotting
 """
-
+S_ref6  = 0.03424
+l_ref6 = 0.107
+T_ref = 295
 #Fig 1 : cla vs incidence
 cla_autre_moyen = -2*za/(101325/(295*287.1)*speed**2*0.03424)
 fig,ax = plt.subplots()
