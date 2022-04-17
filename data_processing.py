@@ -11,7 +11,7 @@ In : "file_path" : local file path example "C:/Users/robbe/Documents/NACA0012/11
 Out: rst : all the results
      incidence,cla,cxa,cma,speed :  the arrays that are of the most interest
 """
-#coucou sofiane
+
 def file_reading(file_path,file_name):
     file_string = file_path+file_name
     with open(file_string,'r') as f:
@@ -42,6 +42,9 @@ def file_reading(file_path,file_name):
     cxa = rst[titles.index("Cxa")]
     cma = rst[titles.index("Cma")]
     speed = rst[titles.index("Vitesse")]
+    Za = rst[titles.index("Za")]
+    Xa = rst[titles.index("Xa")]
+    Ma = rst[titles.index("Ma")]
 
-    return rst,incidence,cla,cxa,cma,speed
+    return rst,incidence,cla,cxa,cma,speed,Za,Xa,Ma
 #rst_cor,incidence_cor,cla_cor,cxa_cor,cma_cor,speed_cor  = file_reading("C:/Users/robbe/Documents/NACA0012/11_04/","10mscor.res")
