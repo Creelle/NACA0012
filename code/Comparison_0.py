@@ -113,3 +113,4 @@ print("finesse max 20 ms- avec volet 0° ", max(cla3/cxa3))
 
 print("Allongement correct : (besoin de la corde)")
 plt.show()
+#robdob
