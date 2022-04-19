@@ -23,3 +23,7 @@ To do :
 Mesure a faire :
 - sans volet 20 ms
 - avec winglet 20 ms
+
+Liste des trucs a faire/refaire
+-> Bandes
+-> refaire 10ms; 15ms;20ms avec le bon fichier excel

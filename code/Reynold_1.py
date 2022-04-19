@@ -81,9 +81,9 @@ ax.legend()
 #Fig 4 : cla vs cma polaire
 
 fig,ax = plt.subplots()
-ax.plot(cxa,cl,'-b',label = "20 ms")
-ax.plot(cxa2,cl2,'-r',label = "15 ms")
-ax.plot(cxa3,cl3,'-g',label = "10 ms")
+ax.plot(cxa,cla,'-b',label = "20 ms")
+ax.plot(cxa2,cla2,'-r',label = "15 ms")
+ax.plot(cxa3,cla3,'-g',label = "10 ms")
 ax.set_xlabel('$Cma$')
 ax.set_ylabel('$Cla$')
 ax.grid(True)
