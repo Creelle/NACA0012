@@ -9,7 +9,7 @@ Compare flap and no flap 0°
 """
 Modify here the file path and name
 """
-document_path = "C:/Users/mikec/OneDrive/Documents/GitHub/NACA0012/Soufflerie/11_04/"
+document_path = "C:/Users/robbe/Documents/github/NACA0012/Soufflerie/11_04/"
 
 file_name = "20mscor.res"
 file_name2 = "15mscor.res"
