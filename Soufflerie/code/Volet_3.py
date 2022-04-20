@@ -10,9 +10,9 @@ Compare flap and no flap 0°
 Modify here the file path and name
 """
 document_path = "C:/Users/robbe/Documents/github/NACA0012/Soufflerie/13_04/Volets/"
-document_path2 = "C:/Users/robbe/Documents/github/NACA0012/Soufflerie/13_04/"
+document_path2 = "C:/Users/robbe/Documents/github/NACA0012/Soufflerie/20_04/"
 file_name = "20ms_Volet_0°_corr.res"
-file_name2 = "20ms_corr.res"
+file_name2 = "20ms_ref.res"
 
 rst,incidence,cla,cxa,cma,speed,za,xa,ma  = file_reading(document_path,file_name)
 rst2,incidence2,cla2,cxa2,cma2,speed2,za2,xa2,ma2  = file_reading(document_path2,file_name2)#data avec la mauvaise corde et envergure (allongement 6)
@@ -24,7 +24,7 @@ lref6 = 0.107
 S_ini = 0.0508
 S_final =  6.4*10**-3 + 0.0508
 Sref6 = 0.03424
-l_volet = 0.01
+l_volet = 0.02
 
 #Il y  a 2 remarques, la premiere est que le file 20mscor.res a été mesuré avec le mauvaise surface et longueur de corde ==> il faut ajuster la mesure prise
 # deuxio : en mettant un volet, on allnge la corde et la surface ==> Il faut corriger par le rapport S_ini/S_fin

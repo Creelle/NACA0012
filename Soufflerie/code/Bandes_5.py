@@ -10,12 +10,14 @@ Compare the number of bandes on the extrados of the airfoil
 Modify here the file path and name
 """
 document_path = "C:/Users/robbe/Documents/github/NACA0012/Soufflerie/13_04/Bandes/"
-file_name = "20ms_0Bandes_corr.res"
+document_path2 = "C:/Users/robbe/Documents/github/NACA0012/Soufflerie/20_04/"
+
+file_name = "20ms_ref.res"
 file_name2 = "20ms_2Bandes_corr.res"
 file_name3 = "20ms_3Bandes_sep-corr.res"
 file_name4 = "20ms_4Bandes_corr.res"
 
-rst,incidence,cla,cxa,cma,speed,za,xa,ma  = file_reading(document_path,file_name)
+rst,incidence,cla,cxa,cma,speed,za,xa,ma  = file_reading(document_path2,file_name)
 rst2,incidence2,cla2,cxa2,cma2,speed2,za2,xa2,ma2  = file_reading(document_path,file_name2)
 rst3,incidence3,cla3,cxa3,cma3,speed3,za3,xa3,ma3  = file_reading(document_path,file_name3)
 rst4,incidence4,cla4,cxa4,cma4,speed4,za4,xa4,ma4  = file_reading(document_path,file_name4)

@@ -10,14 +10,14 @@ Compare flap and no flap 0°
 Modify here the file path and name
 """
 document_path = "C:/Users/robbe/Documents/github/NACA0012/Soufflerie/13_04/Winglet/"
-document_path2 = "C:/Users/robbe/Documents/github/NACA0012/Soufflerie/13_04/"
+
 
 file_name = "13.5ms_Winglet_Decrochage_corr.res"
-file_name2 = "20ms_corr.res"
+file_name2 = "13.5ms_ref.res"
 
 
 rst,incidence,cla,cxa,cma,speed,za,xa,ma  = file_reading(document_path,file_name)
-rst2,incidence2,cla2,cxa2,cma2,speed2,za2,xa2,ma2  = file_reading(document_path2,file_name2)#data avec la mauvaise corde et envergure (allongement 6)
+rst2,incidence2,cla2,cxa2,cma2,speed2,za2,xa2,ma2  = file_reading(document_path,file_name2)#data avec la mauvaise corde et envergure (allongement 6)
 """
 Data
 """

@@ -21,7 +21,7 @@ Data
 lref = 0.159
 S_ini = 0.0508
 S_final =  6.4*10**-3 + 0.0508
-l_volet = 0.01
+l_volet = 0.02
 
 #Il y  a 2 remarques, la premiere est que le file 20mscor.res a été mesuré avec le mauvaise surface et longueur de corde ==> il faut ajuster la mesure prise
 # deuxio : en mettant un volet, on allnge la corde et la surface ==> Il faut corriger par le rapport S_ini/S_fin
