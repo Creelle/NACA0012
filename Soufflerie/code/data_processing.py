@@ -1,7 +1,7 @@
 import numpy as np
 import re
 from matplotlib import pyplot as plt
-plt.rcParams.update({'font.size': 22})
+
 
 """
 File reading
@@ -48,3 +48,35 @@ def file_reading(file_path,file_name):
 
     return rst,incidence,cla,cxa,cma,speed,Za,Xa,Ma
 #rst_cor,incidence_cor,cla_cor,cxa_cor,cma_cor,speed_cor  = file_reading("C:/Users/robbe/Documents/NACA0012/11_04/","10mscor.res")
+def file_reading_sillage(file_path,file_name):
+    file_string = file_path+file_name
+
+    with open(file_string,'r') as f:
+        lines = f.readlines()
+    f.close()
+
+    titles = lines[10]
+
+
+    titles = re.sub("\s+",",",titles.strip()).split(",")
+
+    lines = lines[12:] #remove the above strings from the lines
+
+    #remove the \t and replace by commas
+    for i in range(len(lines)):
+         lines[i]= re.sub("\s+",",",lines[i].strip()).split(",")
+
+    #remove the lines that are incorrect
+    line_length = len(lines[0])
+    new_lines = []
+    for i in range(len(lines)):
+        if(len(lines[i])==line_length):
+            new_lines.append(lines[i])
+        else:
+            continue
+
+    #format the results
+    rst = np.asarray(new_lines, dtype=float).T
+    speed = rst[2]
+
+    return speed,np.mean(speed),np.std(speed)

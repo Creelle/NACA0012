@@ -1,6 +1,6 @@
 import numpy as np
 from matplotlib import pyplot as plt
-plt.rcParams.update({'font.size': 22})
+
 from data_processing import file_reading
 
 """
