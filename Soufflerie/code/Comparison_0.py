@@ -32,6 +32,7 @@ Sref6 = 0.03424
 l_volet = 0.02
 b = 0.32
 
+print("allongement : ",S_ini/lref**2 )
 #Il y  a 2 remarques, la premiere est que le file 20mscor.res a été mesuré avec le mauvaise surface et longueur de corde ==> il faut ajuster la mesure prise
 # deuxio : en mettant un volet, on allnge la corde et la surface ==> Il faut corriger par le rapport S_ini/S_fin
 """
